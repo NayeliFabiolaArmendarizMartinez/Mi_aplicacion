@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
 
     if (selectedDate != null) {
-      // Aquí puedes hacer algo con la fecha seleccionada
+      
       print("Fecha seleccionada: $selectedDate");
     }
   }
@@ -129,8 +129,8 @@ class _MyHomePageState extends State<MyHomePage> {
             label: 'Tareas',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Configuración',
+            icon: Icon(Icons.list),
+            label: 'Tareas urgentes',
           ),
         ],
       ),
@@ -140,22 +140,22 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Color.fromARGB(255, 214, 9, 9),
               ),
               child: Text('Drawer Header'),
             ),
             ListTile(
               title: const Text('Agregar tarea al caendario'),
               onTap: () {
-                // Agrega aquí la acción que deseas realizar al hacer clic en el elemento del cajón
-                _showDatePicker(); // Ejemplo de mostrar DatePicker
+                
+                _showDatePicker(); // DatePicker
               },
             ),
             ListTile(
               title: const Text('Informacion'),
               onTap: () {
-                // Agrega aquí la acción que deseas realizar al hacer clic en el elemento del cajón
-                _showAlertDialog(); // Ejemplo de mostrar AlertDialog
+                
+                _showAlertDialog(); // AlertDialog
               },
             ),
           ],
@@ -163,7 +163,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // Agrega aquí la acción que deseas realizar al hacer clic en el botón flotante
+          
         },
         child: const Icon(Icons.add),
       ),
